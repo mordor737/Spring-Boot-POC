@@ -25,7 +25,7 @@ public class SpringBootPocApplication implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws RuntimeException {
+    public void run(String... args) throws Exception {
         JdbcTemplate mySqlJdbcTemplate = new JdbcTemplate(mySqlDS);
         JdbcTemplate postgresSqlJdbcTemplate = new JdbcTemplate(postgresSqlDB);
 
